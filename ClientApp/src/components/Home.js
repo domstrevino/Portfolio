@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Home.css';
+import profilePicture from '../images/Dominick-Trevino.jpg';
 
 export class Home extends Component {
 	static displayName = Home.name;
@@ -15,8 +16,18 @@ export class Home extends Component {
 
 	render() {
 		return (
-			<div>
+			<div className="wrapper">
 				<h1>Welcome, {this.state.UserName}!</h1>
+				<section className="author-card">
+					<div className="image-cropper">
+						<img src={profilePicture} alt="Profile" />
+					</div>
+
+					<h2>Dominick Trevino</h2>
+					<p className="author-title">
+						C# Developer at Huntington Bancshares
+					</p>
+				</section>
 			</div>
 		);
 	}
