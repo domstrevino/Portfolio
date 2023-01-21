@@ -11,7 +11,7 @@ export class Home extends Component {
 	}
 
 	componentDidMount() {
-		this.populateUserName();
+		this.GetUserName();
 	}
 
 	render() {
@@ -24,15 +24,19 @@ export class Home extends Component {
 					</div>
 
 					<h2>Dominick Trevino</h2>
-					<p className="author-title">
-						C# Developer at Huntington Bancshares
-					</p>
+					<h6 className="author-title">
+						C# Developer at Huntington Bank
+					</h6>
+
+					{/* INSERT SVG FOR GITHUB AND LINKEDIN
+					INSERT LINKS TO GITHUB AND LINKEDIN */}
 				</section>
+				<section></section>
 			</div>
 		);
 	}
 
-	async populateUserName() {
+	async GetUserName() {
 		const response = await fetch('information');
 		const data = await response.text();
 		this.setState({ UserName: data });
