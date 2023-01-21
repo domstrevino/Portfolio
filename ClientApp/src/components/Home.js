@@ -18,20 +18,48 @@ export class Home extends Component {
 		return (
 			<div className="wrapper">
 				<h1>Welcome, {this.state.UserName}!</h1>
+				&nbsp;
 				<section className="author-card">
 					<div className="image-cropper">
 						<img src={profilePicture} alt="Profile" />
 					</div>
 
 					<h2>Dominick Trevino</h2>
-					<h6 className="author-title">
-						C# Developer at Huntington Bank
-					</h6>
-
-					{/* INSERT SVG FOR GITHUB AND LINKEDIN
-					INSERT LINKS TO GITHUB AND LINKEDIN */}
+					<h6 className="author-title">C# Developer</h6>
 				</section>
-				<section></section>
+				&nbsp;
+				<section className="emulator">
+					<div className="emulator-cropper">
+						<div className="emulator-title">Command Prompt</div>
+
+						<div className="emulator-body">
+							<div className="emulator-text">
+								<span>Portfolio [Version 1.0.0]</span>
+								<p>All Rights reserved.</p>
+								{/* <span>C:\Users\Dominick&gt;help</span>
+								<p>
+									LinkedIn
+									<br />
+									GitHub
+									<br />
+									Resume
+									<br />
+									Contact
+								</p> */}
+								<div className="emulator-input">
+									<label htmlFor="html">
+										C:\Users\Dominick&gt;cd&nbsp;
+									</label>
+									<input
+										type="text"
+										id="text"
+										maxLength="10"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 			</div>
 		);
 	}

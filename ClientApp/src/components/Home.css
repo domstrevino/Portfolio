@@ -8,22 +8,74 @@ img {
 	width: 100%;
 	border-radius: 100%;
 }
-
+input {
+	width: 100%;
+	border: none;
+	color: white;
+	background-color: transparent;
+	caret-color: #494949;
+}
+input:focus {
+	outline-width: 0;
+}
 .container {
 	padding: 0 0;
 }
-
 .wrapper {
 	width: max-content;
 	margin: 0 auto;
 }
-
 .image-cropper {
 	height: 15rem;
 	width: 15rem;
 	margin: 0 auto;
 }
-
 .author-title {
 	color: #acb3b7 !important;
+}
+.emulator {
+	font-weight: 100;
+	font-family: Consolas;
+
+	margin: 0 auto;
+}
+.emulator-cropper {
+	display: flex;
+	flex-direction: column;
+
+	height: 19.18rem;
+	width: 90%;
+
+	margin: 0 auto;
+
+	border-radius: 3%;
+	border: 1px solid #5e5e5e;
+
+	background-color: #373737;
+}
+.emulator-title {
+	padding-top: 0.3rem;
+	padding-left: 0.3rem;
+	text-align: left;
+}
+.emulator-body {
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	background-color: black;
+	padding-left: 0.3rem;
+	padding-right: 0.3rem;
+	border-bottom-left-radius: 3%;
+	border-bottom-right-radius: 3%;
+}
+.emulator-text {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	margin-bottom: 5rem;
+}
+.emulator-input {
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
 }
