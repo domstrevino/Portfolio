@@ -42,12 +42,9 @@ input:focus {
 .emulator-cropper {
 	display: flex;
 	flex-direction: column;
-
 	height: 19.18rem;
 	width: 90%;
-
 	margin: 0 auto;
-
 	border-radius: 3%;
 	border: 1px solid #5e5e5e;
 
