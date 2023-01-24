@@ -17,7 +17,7 @@ export class Home extends Component {
 	render() {
 		return (
 			<div className="wrapper">
-				<h1>Welcome, {this.state.UserName}!</h1>
+				{/* <h1>Welcome, {this.state.UserName}!</h1> */}
 				&nbsp;
 				<section className="author-card">
 					<div className="image-cropper">
