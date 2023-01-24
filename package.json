@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "react-responsive-carousel": "^3.2.23"
+    "minimatch": "^6.1.6",
+    "react-responsive-carousel": "^3.2.23",
+    "recursive-readdir": "^2.2.3"
   }
 }
