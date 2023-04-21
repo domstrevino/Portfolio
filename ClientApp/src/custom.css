@@ -13,10 +13,40 @@ code {
 
 body {
 	font-family: Audiowide;
+	color: #ffffff !important;
+	background-color: #0e263a !important;
 }
 
 .btn-primary {
 	color: #fff;
 	background-color: #1b6ec2;
 	border-color: #1861ac;
+}
+
+section {
+	width: 100%;
+	text-align: center;
+	margin-top: 3rem;
+}
+
+img {
+	height: 100%;
+	width: 100%;
+	border-radius: 100%;
+}
+
+input {
+	width: 100%;
+	border: none;
+	color: white;
+	background-color: transparent;
+	caret-color: white;
+}
+
+input:focus {
+	outline-width: 0;
+}
+
+.container {
+	padding: 0 0;
 }

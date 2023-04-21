@@ -1,31 +1,10 @@
-h1,
-section {
+.homepage-body {
 	width: 100%;
-	text-align: center;
-}
-img {
-	height: 100%;
-	width: 100%;
-	border-radius: 100%;
-}
-input {
-	width: 100%;
-	border: none;
-	color: white;
-	background-color: transparent;
-	caret-color: #494949;
-}
-input:focus {
-	outline-width: 0;
-}
-.container {
-	padding: 0 0;
-}
-.wrapper {
-	width: max-content;
 	margin: 0 auto;
 }
-.image-cropper {
+
+/* AUTHOR SECTION */
+.author-image {
 	height: 15rem;
 	width: 15rem;
 	margin: 0 auto;
@@ -33,46 +12,56 @@ input:focus {
 .author-title {
 	color: #acb3b7 !important;
 }
-.emulator {
-	font-weight: 100;
-	font-family: Consolas;
 
-	margin: 0 auto;
-}
-.emulator-cropper {
+/* TERMINAL SECTION */
+.terminal {
 	display: flex;
 	flex-direction: column;
-	height: 19.18rem;
-	width: 90%;
+	width: 30rem;
 	margin: 0 auto;
 	border-radius: 3%;
-	border: 1px solid #5e5e5e;
-
+	border: 1.5px solid #5e5e5e;
+	font-weight: 100;
+	font-family: Consolas;
+	text-align: left;
 	background-color: #373737;
+	color: #c4c2c2;
 }
-.emulator-title {
+.terminal-title {
 	padding-top: 0.3rem;
 	padding-left: 0.3rem;
-	text-align: left;
+	padding-bottom: 0.3rem;
+	color: white;
+	font-size: small;
 }
-.emulator-body {
-	height: 100%;
+.terminal-body {
+	height: 19.18rem;
 	width: 100%;
 	margin: 0 auto;
-	background-color: black;
 	padding-left: 0.3rem;
 	padding-right: 0.3rem;
-	border-bottom-left-radius: 3%;
-	border-bottom-right-radius: 3%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: black;
+	overflow-y: auto;
 }
-.emulator-text {
+.terminal-text {
 	display: flex;
 	flex-direction: column;
 	text-align: left;
-	margin-bottom: 5rem;
 }
-.emulator-input {
+.terminal-input {
 	display: flex;
 	align-items: center;
 	white-space: nowrap;
+}
+.terminal-command {
+	width: 7rem;
+	display: inline-block;
+}
+
+@media (max-width: 500px) {
+	.terminal {
+		width: 85%;
+	}
 }

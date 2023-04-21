@@ -16,40 +16,46 @@ export class Home extends Component {
 
 	render() {
 		return (
-			<div className="wrapper">
-				{/* <h1>Welcome, {this.state.UserName}!</h1> */}
+			<div className="homepage-body">
+				{/*<h1>Welcome, {this.state.UserName}!</h1>*/}
 				&nbsp;
-				<section className="author-card">
-					<div className="image-cropper">
+				<section>
+					<div className="author-image">
 						<img src={profilePicture} alt="Profile" />
 					</div>
-
+					&nbsp;
 					<h2>Dominick Trevino</h2>
 					<h6 className="author-title">C# Developer</h6>
 				</section>
-				&nbsp;
-				<section className="emulator">
-					<div className="emulator-cropper">
-						<div className="emulator-title">Command Prompt</div>
 
-						<div className="emulator-body">
-							<div className="emulator-text">
-								<span>Portfolio [Version 1.0.0]</span>
+				<section>
+					<div className="terminal">
+						<div className="terminal-title">Command Prompt</div>
+
+						<div className="terminal-body">
+							<div className="terminal-text">
+								<span>Dominick's Portfolio [Version 1.0.0]</span>
 								<p>All Rights reserved.</p>
-								{/* <span>C:\Users\Dominick&gt;help</span>
+								<span>C:\Users\Dominick&gt;help</span>
 								<p>
-									LinkedIn
-									<br />
-									GitHub
-									<br />
-									Resume
-									<br />
-									Contact
-								</p> */}
-								<div className="emulator-input">
-									<label htmlFor="html">
-										C:\Users\Dominick&gt;cd&nbsp;
-									</label>
+									<div>
+										<span className="terminal-command">RESUME</span>Dominick's resume.
+									</div>
+									<div>
+										<span className="terminal-command">PROJECTS</span>Dominick's projects.
+									</div>
+									<div>
+										<span className="terminal-command">LINKEDIN</span>Dominick's LinkedIn.
+									</div>
+									<div>
+										<span className="terminal-command">GITHUB</span>Dominick's GitHub.
+									</div>
+									<div>
+										<span className="terminal-command">CONTACT</span>Dominick's contact information.
+									</div>
+								</p>
+								<div className="terminal-input">
+									<label htmlFor="text">C:\Users\Dominick&gt;</label>
 									<input
 										type="text"
 										id="text"
